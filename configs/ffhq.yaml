@@ -1,0 +1,9 @@
+model: vit_b16
+attribution:
+  epsilon: 0.20
+  delta: 0.06
+  curvature_blend: 0.40
+  curvature_weight: 1.0
+parts:
+  method: facemesh
+  count: 14

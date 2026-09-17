@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "klh-attribution"
+version = "1.0.0"
+description = "Curvature-aware part-level attribution for vision models"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Maisha Maliha"},
+  {name = "Dean F. Hougen"},
+]
+dependencies = [
+  "numpy>=1.26",
+  "Pillow>=10.0",
+  "PyYAML>=6.0",
+  "scikit-learn>=1.4",
+  "torch>=2.2",
+  "torchvision>=0.17",
+  "timm>=0.9",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+parts = [
+  "mediapipe>=0.10",
+  "openpifpaf>=0.13",
+  "ultralytics>=8.0",
+  "opencv-python>=4.9",
+]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.5",
+]
+
+[project.scripts]
+klh = "klh.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100

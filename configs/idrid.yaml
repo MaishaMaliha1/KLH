@@ -1,0 +1,10 @@
+model: dino_vit_b16
+attribution:
+  epsilon: 0.35
+  delta: 0.12
+  curvature_blend: 0.35
+  curvature_weight: 1.0
+parts:
+  method: dino
+  count: 10
+  min_area_ratio: 0.0025

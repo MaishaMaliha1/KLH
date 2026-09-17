@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "KL-Hessian Attribution"
+message: "If you use this code in your research or build upon this work, please cite the associated paper."
+type: software
+authors:
+  - family-names: Maliha
+    given-names: Maisha
+  - family-names: Hougen
+    given-names: Dean F.
+year: 2026
+preferred-citation:
+  type: conference-paper
+  title: "Beyond Gradients: Curvature-Aware Part-Level Explanations for Vision Models"
+  authors:
+    - family-names: Maliha
+      given-names: Maisha
+    - family-names: Hougen
+      given-names: Dean F.
+  conference:
+    name: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops"
+  year: 2026
+  month: 6
+  start: 562
+  end: 571
